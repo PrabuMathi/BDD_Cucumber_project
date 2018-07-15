@@ -1,0 +1,14 @@
+Feature: Demo AutomationTesting Home feature
+Scenario Outline: Demo AutomationTesting SignIn Scenario
+
+Given User is already on Home page
+When User is able to see SignIn button
+Then Enter EmailID for SignUP
+Then Verify User is on Registration page
+Then User Enters "<FirstName>" and "<LastName>"
+Then Submit Registration 
+
+Examples:
+        |FirstName | LastName |
+        |David     | Warner   |
+        |Santosh   | Nakom    |
